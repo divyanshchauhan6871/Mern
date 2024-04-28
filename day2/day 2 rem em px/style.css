@@ -1,0 +1,66 @@
+/* *{
+    padding: 0;
+    margin: 0;
+} */
+
+/* .container{
+    width: 100vw;
+    height: 10vh;
+    background-color: aqua;
+    overflow-y: scroll;
+} */
+
+.container{
+    width: 10vw;
+    height: 100vh;
+    background-color: aqua;
+    overflow-x: scroll;
+}
+
+/* .parent{
+    ul{
+        background-color: yellow;
+    }
+    ol:last-child{
+        background-color: chartreuse;
+        li:nth-child(3){
+            background-color: red;
+            width: fit-content;
+        }
+    }
+} */
+
+
+.parent{
+    ul{
+        background-color: yellow;
+    }
+    ol:last-child{
+        background-color: chartreuse;
+        li:first-of-type{
+            background-color: red;
+            width: fit-content;
+        }
+        li:last-of-type{
+            background-color: red;
+            width: fit-content;
+        }
+        li:nth-of-type(3){
+            background-color: red;
+            width: fit-content;
+        }
+    }
+}
+
+.childselect ul{
+    background-color: blue;
+    color: white;
+}
+.childselect>ul{
+    background-color: yellow;
+    color: black;
+}
+.childselect+ul{
+    background-color: rgb(252, 135, 154);
+    color: black;
+}

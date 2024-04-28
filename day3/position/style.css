@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* .movearound{
+    position: relative;
+    top: 50px;
+} */
+/* in this the position of the block gets set according to its own position and its space(foot prints) are left behind*/
+
+
+/* .movearound{
+    position: absolute;
+    top: 50px;
+    left: 75px;
+} */
+/* in this the body takes its space according to the just immedeate parent and sets itself and the element does its own space and leave its footprint*/
+
+
+/* .movearound{
+    position: fixed;
+    top: 75px;
+    left: 60px;
+} */
+/* in this the element get fixed according to the body tag */
+
+.movearound{
+    position: sticky;
+    top: 0;
+    left: 50px;
+}
+/* in this the element with position stick it sticks releyively to the parent untill it is on the screen and tends to remain on the screen
+to overcome the stickyness we can use the position relatice for the element which do not want to be covered by position sticky*/

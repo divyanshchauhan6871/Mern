@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: aqua;">
+    <!-- window.open -->
+    <!-- <button onclick="open()">open new tab</button> -->
+    <br>
+    <button id="bgcome" onclick="changebg()">change bg</button>
+    <button id="viewphotoo" onclick="viewphoto()">view photo</button>
+    <button id="dephotoo" style="display: none;" onclick="delphoto()">delete photo</button>
+    
+    <br>
+    <img src="photo1.jpg" id="myphoto" style="display: none;" width="20%" alt="">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, doloribus.
+    
+    <br>
+    <div>
+        <form onsubmit="submitForm(event)" action="./index.html">
+            <label for="namebox">Enter your name</label>
+            <!-- <input onchange="dis(event)" id="namebox" name="name" type="text"><br> -->
+            <!-- the above mentioned statement will not show any response due to the property of on change and it will not be 
+        affected untill between typing we do not click around the input field -->
+        <input onkeydown="dis(event)" id="namebox" name="name" type="text"><br>
+        <label for="mob">mobile number</label>
+        <input id="mob" type="number">
+        <br>
+        <label for="writingarea">Description</label>
+        <br>
+        <textarea id="writingarea" name="area" id="" cols="30" rows="10"></textarea>
+        <!-- <input type="submit"></input> -->
+        <br>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label><br><br>
+        
+
+        <br>
+        
+        
+        
+        <p>Please select your favorite Web language:</p>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+            
+            
+            <br>
+            
+            <input type="submit" name="" id="">
+        </form>
+        <button onclick="submitfunc()">Submit</button>
+    </div>
+    <div id="show"></div>
+    <br>
+    <button id="removebtn" onclick="dellist()">delete first list</button>
+    <button id="removebtnl" onclick="dellistl()">delete first list</button>
+    <div id="listcontainer">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+        <ol>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ol>
+        <ol>
+            <li>pencil</li>
+            <li>pencil</li>
+            <li>pencil</li>
+            <li>pencil</li>
+        </ol>
+        <ol>
+            <li>rubber</li>
+            <li>rubber</li>
+            <li>rubber</li>
+            <li>rubber</li>
+        </ol>
+        <ol>
+            <li>sharpner</li>
+            <li>sharpner</li>
+            <li>sharpner</li>
+            <li>sharpner</li>
+        </ol>
+        <ol>
+            <li>box</li>
+            <li>box</li>
+            <li>box</li>
+            <li>box</li>
+        </ol>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

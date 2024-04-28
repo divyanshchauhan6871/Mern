@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.parent {
+    background-color: black;
+    color: white;
+    width: 400px;
+    height: 300px;
+
+    h2 {
+        text-align: center;
+        height: 75px;
+    }
+}
+
+@media (360px <=width <=720px) {
+    .parent{
+        background-color: rgb(89, 219, 219);
+        color: black;
+        h2{
+            font-size: 80px;
+        }
+    }
+}

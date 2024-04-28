@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="ASCII">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        p {
+            background-color: aqua;
+            font-weight: bold;
+            padding: 16px;
+            box-sizing: border-box;            
+        }
+        
+        .para-p.para-q {
+            background-color: blue;
+            color: white;
+        }
+        
+        .para-r .para-s {
+            background-color: rgb(43, 236, 39);
+            color: rgb(7, 7, 7);
+            
+        }
+        .deep{
+            background-color: chartreuse;
+        }
+        </style>
+</head>
+
+<body>
+    <p style="background-color: aqua;
+    font-weight: bold;">
+        Hello World!
+    </p>
+    <p style="background-color: aqua;
+    font-weight: bold;">
+        Hello div!
+    </p>
+
+    <div class="para-p">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, alias.
+    </div>
+    <div class="para-p para-q">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, alias.
+    </div>
+    <div class="para-r para-s">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, alias.
+    </div>
+    <div class="para-r para-s" style="margin: 0 0 0 auto; width: 500px;">
+        <div class="para-s">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, alias.
+        </div>
+    </div>
+    <div style="text-align: center;">
+        <img width="100px" src="photo1.jpg" alt="">
+    </div>
+
+    <div id="dee" class="deep">lorem 5
+
+    </div>
+</body>
+
+</html>
