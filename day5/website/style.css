@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* background-color: cyan; */
+}
+#container{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 100vw;
+}
+
+button{
+    background-color: aqua;
+    color: black;
+    font-size: large;
+    padding: 8px;
+    cursor: pointer;
+}
+
+h1{
+    font-style: italic;
+    text-align: center;
+}
+.cart-container{
+    padding: 32px;
+    /* margin-left: 6px; */
+    /* margin-right: 6px; */
+}
+
+.scaleup{
+    transition-property: scale;
+    transition-duration: 0.25s;
+}
+.scaleup:hover{
+    scale: 1.1;
+}

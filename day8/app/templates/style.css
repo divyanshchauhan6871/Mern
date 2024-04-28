@@ -1,0 +1,24 @@
+.card-temp{
+    background-color:#023047;
+    color:white;
+    min-width: 300px;
+    max-width: fit-content;
+    margin: 1rem auto;
+    border: 6px solid red;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    max-width: 300px;
+    transition-property: scale border;
+    transition-duration: 0.25s;
+    
+}
+.card-temp:hover{
+    scale: 1.07;
+    border: 8px solid yellow;
+}
+img{
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 1.5rem;
+}

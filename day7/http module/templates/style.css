@@ -1,0 +1,15 @@
+.card-temp{
+    background-color:yellow;
+    color:black;
+    min-width: 300px;
+    max-width: fit-content;
+    margin: 5rem auto;
+    border: 6px solid red;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+img{
+    max-width: 300px;
+}
