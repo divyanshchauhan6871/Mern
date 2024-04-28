@@ -1,0 +1,33 @@
+on this day we are going to study the MVC 
+sabse pehle aata hai Controllet isme hum apne functions daalte hai jisse humara script.js file ka code jyada lengthy na ho jaye
+first level of abstraction me humne sabse pehle saare routes ko ek sath katke app.route use kiye hai
+ab humne kya kiya hai ki routes ka folder banaya hai aur usme require karke ../../ karke bahar jana pada kyunki jab hum require karte hai toh relative path liya jata hai aur jab hum fs.readFile kiya hai controller toh ./data.json se hi ho gaya kyunki us time pe voh humare terminal ke respect me chal raha.
+
+folder structure
+=   = controller
+=   =   = productcontroller
+=   =   =   = productcontroller.js
+=   =   =   =   : saare functions defined honge
+=   =   =   =   : export the functions
+=   =   = usercontroller
+=   =   =   = usercontroller.js
+=   =   =   =   : saare functions defined honge
+=   =   =   =   : export the functions
+=   = routes
+=   =   = productroute
+=   =   =   = productRoute.js
+=   =   =   =   :import express, productController
+=   =   =   =   :Router banenge
+=   =   =   =   :Router assign honge alag alag path pe
+=   =   =   =   :Router export hoga
+=   =   = userroutes
+=   =   =   = userRoutes.js
+=   =   =   =   :import express, userController
+=   =   =   =   :Router banenge
+=   =   =   =   :Router assign honge alag alag path pe
+=   =   =   =   :Router export hoga
+=   = script.js
+=   =   : import express
+=   =   : app = express
+=   =   : app.middleware
+=   =   : app.listen

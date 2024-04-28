@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Validation</title>
+    <link rel="stylesheet" href="./formvalidation.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <form>
+
+            <div class="input-group">
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="validateName()">
+                <span id="nameError"></span>
+            </div>
+
+            <div class="input-group">
+                <label>Phone No.</label>
+                <input type="tel" placeholder="123 456 7890" id="phone-no" onkeyup="validatePhone()">
+                <span id="phoneError"></span>
+
+            </div>
+
+            <div class="input-group">
+                <label>Email Id</label>
+                <input type="email" placeholder="Enter Email" id="email-id" onkeyup="validateEmail()">
+                <span id="mailError"></span>
+
+            </div>
+
+            <div class="input-group">
+                <label>Your Message</label>
+                <textarea rows="5" placeholder="Enter your message" id="text-msg" onkeyup="validateMsg()"></textarea>
+                <span id="textError"></span>
+
+            </div>
+
+            <button onclick="return validateform()">Submit</button>
+            <span id="submitError"></span>
+
+            
+
+        </form>
+
+
+    </div>
+
+    <script src="./formvalidation.js"></script>
+</body>
+
+</html>
